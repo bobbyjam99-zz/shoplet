@@ -1,13 +1,8 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  description: MyText
-  product_type_id: 1
-  price: 1
-
-two:
-  name: MyString
-  description: MyText
-  product_type_id: 1
-  price: 1
+first:
+  product_type: book
+  name: Abc
+  price: 1440
+another:
+  product_type: music
+  name: Cde
+  price: 2990

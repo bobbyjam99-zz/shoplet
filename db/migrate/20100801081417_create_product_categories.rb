@@ -1,6 +1,6 @@
 class CreateProductCategories < ActiveRecord::Migration
-  class ProductType < ActiveRecord::base; end
-  class ProductCategory < ActiveRecord::base; end
+  class ProductType < ActiveRecord::Base; end
+  class ProductCategory < ActiveRecord::Base; end
 
   def self.up
     create_table :product_categories do |t|
