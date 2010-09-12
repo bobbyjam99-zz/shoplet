@@ -7,4 +7,12 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+
+  private
+  def intern_price
+    if params[:product] && params[:product][:price]
+      v = params[:product][:prict].split('.').map(&:to_i)
+      params[:product][:price] = v[0]*100 + v[1]
+    end
+  end
 end
